@@ -1,5 +1,5 @@
 {
-  "name": "barha-api",
+  "name": "bahra-api",
   "version": "1.0.0",
   "description": "GRAPHQL API de Base de Asentamientos Humanos de la República Argentina.",
   "main": "src/index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/martinfacc/barha-api.git"
+    "url": "git+https://github.com/martinfacc/bahra-api.git"
   },
   "author": "Martin Facciuto",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/martinfacc/barha-api/issues"
+    "url": "https://github.com/martinfacc/bahra-api/issues"
   },
-  "homepage": "https://github.com/martinfacc/barha-api#readme",
+  "homepage": "https://github.com/martinfacc/bahra-api#readme",
   "dependencies": {
     "@graphql-tools/schema": "8.5.0",
     "dotenv": "16.0.1",
