@@ -3,6 +3,7 @@ dotenv.config()
 import express from 'express'
 import { graphqlHTTP } from 'express-graphql'
 import graphqlSchema from './graphqlSchema.js'
+import logger from './logger.js'
 
 const app = express()
 const { APP_PORT } = process.env
@@ -12,4 +13,6 @@ app.use('/', graphqlHTTP({
 	schema: graphqlSchema,
 }))
 
-app.listen(APP_PORT, () => console.log(`BAHRA-API listening on port ${APP_PORT}!`))
+app.use((request, response) => response.status(404).end())
+
+app.listen(APP_PORT, () => logger.info(`BAHRA-API listening on port ${APP_PORT}!`))
