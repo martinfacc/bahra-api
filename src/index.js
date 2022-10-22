@@ -11,8 +11,6 @@ import favicon from 'serve-favicon'
 const { APP_PORT } = process.env
 const __dirname = path.resolve()
 
-console.log(__dirname)
-
 const app = express()
 app.use(cors())
 app.use(express.json())
