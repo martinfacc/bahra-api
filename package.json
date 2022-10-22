@@ -21,13 +21,13 @@
   "homepage": "https://github.com/martinfacc/bahra-api#readme",
   "dependencies": {
     "@graphql-tools/schema": "8.5.0",
-    "cors": "^2.8.5",
+    "cors": "2.8.5",
     "dotenv": "16.0.1",
     "express": "4.18.1",
     "express-graphql": "0.12.0",
-    "graphql": "^16.5.0",
+    "graphql": "16.5.0",
     "log4js": "6.6.0",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "2.5.0"
   },
   "devDependencies": {
     "@babel/preset-env": "7.18.6",
