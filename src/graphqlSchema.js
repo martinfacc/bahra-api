@@ -8,7 +8,7 @@ import {
 } from './data/index.js'
 import { findByArgs, filterByArgs } from './helpers.js'
 
-const typeDefs = `
+const typeDefs = `#graphql
 	type Provincia {
 		id: ID!
 		nombre: String
