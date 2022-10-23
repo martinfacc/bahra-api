@@ -8,7 +8,7 @@ import cors from 'cors'
 import path from 'path'
 import favicon from 'serve-favicon'
 
-const { APP_PORT } = process.env
+const { APP_PORT, APP_URL } = process.env
 const __dirname = path.resolve()
 
 const app = express()
@@ -18,11 +18,17 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use(favicon(path.join(__dirname, 'public', 'favicon.png')))
 
-app.use('/', graphqlHTTP({
-	graphiql: true,
-	schema: graphqlSchema,
-}))
+app.use(
+	'/',
+	graphqlHTTP({
+		graphiql: true,
+		schema: graphqlSchema,
+	})
+)
 
 app.use((request, response) => response.status(404).end())
 
-app.listen(APP_PORT, () => logger.info(`BAHRA-API listening on port ${APP_PORT}!`))
+app.listen(APP_PORT, () => {
+	logger.info(`BAHRA-API on ${APP_URL}`)
+	console.log(`BAHRA-API on ${APP_URL}`)
+})
