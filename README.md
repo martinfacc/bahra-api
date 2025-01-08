@@ -2,7 +2,7 @@
 
 GRAPHQL API de Base de Asentamientos Humanos de la República Argentina.
 
-El proyecto BAHRA-API consiste en una API de GraphQL construida con Node.js que permite el acceso a los datos de cada Asentamiento Humano de la Replica Argentina con sus correspodientes relaciones con Provincias, Departamentos, Municipios, y Aglomerados.
+El proyecto BAHRA-API es una API de GraphQL desarrollada en Node.js que facilita el acceso a información detallada sobre cada Asentamiento Humano de la República Argentina, incluyendo sus relaciones correspondientes con Provincias, Departamentos, Municipios y Aglomerados.
 
 La informacion utilizada proviene de [BAHRA](http://www.bahra.gob.ar/).
 
